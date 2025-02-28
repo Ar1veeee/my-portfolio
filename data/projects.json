@@ -50,7 +50,7 @@
     "title": "My First Portfolio",
     "link": {
       "label": "Portfolio.dash",
-      "url": "https://aliefarfn.my.id/"
+      "url": "https://my-profile-gules-nine.vercel.app/"
     },
     "description": "This is my first portfolio website, designed to showcase my projects, skills, and experience in web development. It features a modern and responsive design built with HTML, CSS, JavaScript, and Tailwind CSS.",
     "languageIcons": [
@@ -64,15 +64,15 @@
     "thumbnail": "/skinory_thumbnail.png",
     "title": "Skinory APIs",
     "link": {
-      "label": "Skinory Documentation",
-      "url": "https://aliefarfn.my.id/"
+      "label": "APIs Documentation",
+      "url": "https://github.com/Ar1veeee/BackEnd_SkinOry_CC"
     },
     "description": "An API service designed for skincare analysis and product recommendations. Skinory APIs leverage web scraping and data processing to provide accurate and relevant skincare information.",
-    "languageIcons": [
-      "/html_icon.png",
-      "/css_icon.png",
+    "languageIcons": [      
       "/js_icon.png",
-      "/tailwind_icon.png"
+      "/express_icon.png",
+      "/gcp_icon.png",
+      "/nodejs_icon.png"
     ]
   }
 ]

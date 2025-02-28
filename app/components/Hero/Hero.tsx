@@ -39,7 +39,7 @@ function Hero() {
             width={372}
             height={430}
             className="hidden md:block w-[372px] h-[430px] absolute right-0 top-0 -z-10 group-hover:scale-[102%] group-hover:-rotate-2 ease-in-out duration-300"
-          />
+          />  
           <Image
             src="/profile_dark_purple.png"
             alt="Dark purple rectangle"
