@@ -1,0 +1,78 @@
+[
+  {
+    "thumbnail": "/weather_thumbnail.png",
+    "title": "Weather Dashboard",
+    "link": {
+      "label": "Weather.dash",
+      "url": "https://weather-app-ashy-pi-22.vercel.app/"
+    },
+    "description": "Developed a weather dashboard that displays real-time data from public APIs. This application allows users to view the latest weather information with a responsive and modern look using HTML, CSS, JavaScript, and Tailwind CSS.",
+    "languageIcons": [
+      "/html_icon.png",
+      "/css_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/tictactoe_thumbnail.png",
+    "title": "Tictactoe Game",
+    "link": {
+      "label": "Tictactoe.dash",
+      "url": "https://react-tictactoe-zp8t.vercel.app/"
+    },
+    "description": "Create an interactive Tic-Tac-Toe game that can be played with friends. Developed with React for a responsive gaming experience, and using HTML, CSS, JavaScript, and Tailwind CSS for an attractive look.",
+    "languageIcons": [
+      "/html_icon.png",
+      "/css_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png",
+      "/react_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/portal_thumbnail.png",
+    "title": "Landing Page",
+    "link": {
+      "label": "Portal.dash",
+      "url": "https://portal.aliefarfn.my.id/"
+    },
+    "description": "A modern and responsive landing page designed to highlight key projects and skills. Built using HTML, CSS, JavaScript, and Tailwind CSS to ensure a seamless user experience.",
+    "languageIcons": [
+      "/html_icon.png",
+      "/css_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/portfolio_thumbnail.png",
+    "title": "My First Portfolio",
+    "link": {
+      "label": "Portfolio.dash",
+      "url": "https://aliefarfn.my.id/"
+    },
+    "description": "This is my first portfolio website, designed to showcase my projects, skills, and experience in web development. It features a modern and responsive design built with HTML, CSS, JavaScript, and Tailwind CSS.",
+    "languageIcons": [
+      "/html_icon.png",
+      "/css_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/skinory_thumbnail.png",
+    "title": "Skinory APIs",
+    "link": {
+      "label": "Skinory Documentation",
+      "url": "https://aliefarfn.my.id/"
+    },
+    "description": "An API service designed for skincare analysis and product recommendations. Skinory APIs leverage web scraping and data processing to provide accurate and relevant skincare information.",
+    "languageIcons": [
+      "/html_icon.png",
+      "/css_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png"
+    ]
+  }
+]

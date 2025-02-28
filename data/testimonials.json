@@ -1,0 +1,20 @@
+[
+    {
+        "image": "/user_1.png",
+        "name": "Fauzi Adam",
+        "role": "Junior Web Developer",
+        "description": "Alief brings a rare combination of technicall skill and creative thinking to every project."
+    },
+    {
+        "image": "/user_2.png",
+        "name": "Gumelar Tri Cahyo",
+        "role": "Junior Web Developer",
+        "description": "Even as a junior Software Engineer, Alief demonstrated an exceptional ability to solve complex problems."
+    },
+    {
+        "image": "/user_3.png",
+        "name": "Thomas Bintara",
+        "role": "Junior Mobile Developer",
+        "description": "What sets Alief apart is his relentless drive for excellence, He consistently exceeds expectations."
+    }
+]

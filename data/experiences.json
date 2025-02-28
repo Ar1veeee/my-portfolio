@@ -1,0 +1,39 @@
+[
+    {
+        "image": "/company_1.png",
+        "company": "CompTIA",
+        "role": "Linux Administrator",
+        "description": "Earned CompTIA Linux+ certification, proving expertise in Linux system administration, server management, and open-source-based system security.",
+        "dates": "2022 - 2022"
+
+    },
+    {
+        "image": "/company_2.png",
+        "company": "Belmawa - PKM KC",
+        "role": "IoT Engineer",
+        "description": "Developing IoT devices to detect carbon monoxide, sulfur dioxide, humidity, and temperature in the surrounding environment, to increase awareness and mitigate air pollution risks.",
+        "dates": "2023 - 2023"
+    },
+    {
+        "image": "/company_3.png",
+        "company": "Telkom Indonesia - INNOVILLAGE",
+        "role": "IoT Engineer",
+        "description": "Design and implement an IoT device to monitor air quality with sensors for carbon monoxide, sulfur dioxide, and other environmental parameters for smart environment solutions.",
+        "dates": "2023 - 2024"
+    },
+    
+    {
+        "image": "/company_4.png",
+        "company": "Mikrotik",
+        "role": "Networking",
+        "description": "Achieved the MikroTik Certified Network Associate (MTCNA) certification, with competencies in network configuration, routing management, firewalls, and troubleshooting of MikroTik devices.",
+        "dates": "2024 - 2024"
+    },
+    {
+        "image": "/company_5.png",
+        "company": "Bangkit",
+        "role": "Cloud Computing",
+        "description": "Developed and implemented cloud-based APIs and deployments using Google Cloud Platform (GCP) for scalable and efficient cloud computing solutions.",
+        "dates": "2024 - 2025"
+    }
+]

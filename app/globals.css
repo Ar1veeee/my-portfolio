@@ -4,18 +4,65 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
+  --primary: #522ffe;
+  --card: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #030304;
+  --foreground: #ffffff;
+  --primary: #522ffe;
+  --card: #1d1d1d;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .bg-top-bg-light {
+    background-image: url('/top_bg_light.svg');
+  }
+
+  .bg-top-bg-mobile-light {
+    background-image: url('/top_bg_mobile_light.svg');
+  }
+
+  .bg-top-bg-dark {
+    background-image: url('/top_bg_dark.svg');
+  }
+
+  .bg-top-bg-mobile-dark {
+    background-image: url('/top_bg_mobile_dark.svg');
+  }
+}
+
+
+@layer components {
+  .card-shadow {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .circle-icon {
+    @apply flex items-center justify-center rounded-full w-11 h-11 md:w-14 md:h-14 bg-[#f4ebff] bg-opacity-[12%] absolute;
+  }
+
+  .highlight {
+    @apply bg-primary text-white px-5 rounded-[4px];
+  }
+
+  .section-contents {
+    @apply w-full flex flex-col items-center gap-10 md:gap-[50px];
+  }
+
+  .card {
+    @apply bg-card rounded-lg card-shadow;
+  }
+
+  .contact-button {
+    @apply p-1.5 rounded-md card-shadow flex items-center justify-center w-10 h-10 dark:bg-slate-200 dark:bg-opacity-10;
+  }
 }
