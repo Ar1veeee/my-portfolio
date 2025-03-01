@@ -19,8 +19,14 @@
     },
     {
         "image": "/user_4.png",
-        "name": "Rano",
+        "name": "Rano Karno",
         "role": "Paduka",
         "description": "Josjiss king"
+    },
+    {
+        "image": "/user_5.png",
+        "name": "Java Dewangga",
+        "role": "Roamer",
+        "description": "Kelas king, ben koyo rano karno"
     }
 ]
