@@ -8,6 +8,10 @@
         "icon": "/ts_icon.png"
     },
     {
+        "name": "Figma",
+        "icon": "/figma_icon.png"
+    },
+    {
         "name": "CSS",
         "icon": "/css_icon.png"
     },
@@ -28,11 +32,15 @@
         "icon": "/laravel_icon.png"
     },
     {
+        "name": "Code Igniter",
+        "icon": "/ci_icon.png"
+    },
+    {
         "name": "PHP",
         "icon": "/php_icon.png"
     },
     {
-        "name": "Next JS",
+        "name": "Next.js",
         "icon": "/nextjs_icon.png"
     },
     {
@@ -44,11 +52,19 @@
         "icon": "/gcp_icon.png"
     },
     {
-        "name": "Node JS",
+        "name": "Redis",
+        "icon": "/redis_icon.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "/firebase_icon.png"
+    },
+    {
+        "name": "Node.js",
         "icon": "/nodejs_icon.png"
     },
     {
-        "name": "Express JS",
+        "name": "Express.js",
         "icon": "/express_icon.png"
     }
 ]

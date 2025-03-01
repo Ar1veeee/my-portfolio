@@ -4,7 +4,7 @@
     "title": "Weather Dashboard",
     "link": {
       "label": "Weather.dash",
-      "url": "https://weather-app-ashy-pi-22.vercel.app/"
+      "url": "https://aliefarfn-weather-dash.vercel.app/"
     },
     "description": "Developed a weather dashboard that displays real-time data from public APIs. This application allows users to view the latest weather information with a responsive and modern look using HTML, CSS, JavaScript, and Tailwind CSS.",
     "languageIcons": [
@@ -19,7 +19,7 @@
     "title": "Tictactoe Game",
     "link": {
       "label": "Tictactoe.dash",
-      "url": "https://react-tictactoe-zp8t.vercel.app/"
+      "url": "https://aliefarfn-tictactoe-dash.vercel.app/"
     },
     "description": "Create an interactive Tic-Tac-Toe game that can be played with friends. Developed with React for a responsive gaming experience, and using HTML, CSS, JavaScript, and Tailwind CSS for an attractive look.",
     "languageIcons": [
@@ -50,7 +50,7 @@
     "title": "My First Portfolio",
     "link": {
       "label": "Portfolio.dash",
-      "url": "https://my-profile-gules-nine.vercel.app/"
+      "url": "https://aliefarfn-old-profile.vercel.app/"
     },
     "description": "This is my first portfolio website, designed to showcase my projects, skills, and experience in web development. It features a modern and responsive design built with HTML, CSS, JavaScript, and Tailwind CSS.",
     "languageIcons": [
@@ -73,6 +73,24 @@
       "/express_icon.png",
       "/gcp_icon.png",
       "/nodejs_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/animelist_thumbnail.png",
+    "title": "Anime List",
+    "link": {
+      "label": "Under Develop",
+      "url": "https://github.com/Ar1veeee/my-anime-list"
+    },
+    "description": "A web application built with React and Next.js that utilizes the Jikan API to fetch and manage anime lists, allowing users to track their watch progress and explore anime details.",
+    "languageIcons": [      
+      "/html_icon.png",
+      "/css_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png",
+      "/nodejs_icon.png",
+      "/react_icon.png",
+      "/nextjs_icon.png"
     ]
   }
 ]
