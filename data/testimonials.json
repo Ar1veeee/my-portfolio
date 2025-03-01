@@ -18,15 +18,21 @@
         "description": "What sets Alief apart is his relentless drive for excellence, He consistently exceeds expectations."
     },
     {
+        "image": "/user_6.png",
+        "name": "Nindya Zahra",
+        "role": "Pookie Mine",
+        "description": "Kereennn bangeetttt😍😍"
+    },
+    {
         "image": "/user_4.png",
         "name": "Rano Karno",
         "role": "Paduka",
-        "description": "Josjiss king"
+        "description": "Josjiss king 👍"
     },
     {
         "image": "/user_5.png",
         "name": "Java Dewangga",
         "role": "Roamer",
-        "description": "Kelas king, ben koyo rano karno"
+        "description": "Kelas king, ben koyo rano karno 😆"
     }
 ]
