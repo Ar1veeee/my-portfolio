@@ -6,6 +6,12 @@
         "description": "Alief brings a rare combination of technicall skill and creative thinking to every project."
     },
     {
+        "image": "/user_6.png",
+        "name": "Nindya Zahra",
+        "role": "Pookie Mine",
+        "description": "Kereennn bangeetttt😍😍"
+    },
+    {
         "image": "/user_2.png",
         "name": "Gumelar Tri Cahyo",
         "role": "Junior Web Developer",
@@ -18,10 +24,10 @@
         "description": "What sets Alief apart is his relentless drive for excellence, He consistently exceeds expectations."
     },
     {
-        "image": "/user_6.png",
-        "name": "Nindya Zahra",
-        "role": "Pookie Mine",
-        "description": "Kereennn bangeetttt😍😍"
+        "image": "/user_7.png",
+        "name": "Halida Ery",
+        "role": "UI/UX Designer",
+        "description": "Keren sih, good job, Alief!"
     },
     {
         "image": "/user_4.png",
@@ -35,4 +41,5 @@
         "role": "Roamer",
         "description": "Kelas king, ben koyo rano karno 😆"
     }
+    
 ]
