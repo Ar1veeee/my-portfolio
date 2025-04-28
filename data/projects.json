@@ -35,7 +35,7 @@
     "title": "Landing Page",
     "link": {
       "label": "Portal.dash",
-      "url": "https://portal.aliefarfn.my.id/"
+      "url": "https://homepage-three-plum.vercel.app/"
     },
     "description": "A modern and responsive landing page designed to highlight key projects and skills. Built using HTML, CSS, JavaScript, and Tailwind CSS to ensure a seamless user experience.",
     "languageIcons": [
