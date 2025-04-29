@@ -23,10 +23,10 @@ function Hero() {
         </Reveal>
         <Reveal initialX={-40} delay={0.4}>
           <a
-            href="https://drive.google.com/file/d/1aupWxS-F1XbNnJZg_OdJiLh3k_3g2lkD/view"
+            href="https://drive.google.com/file/d/1iIahUxYNs5XdktbeHmWO91CCNnW1c3p3/view?usp=sharing"
             className="self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm md:self-start md:text-xl/;"
           >
-            View my resume{" "}
+            View my CV{" "}
             <img src="/arrow_right_icon.svg" alt="Arrow Right Icon" />
           </a>
         </Reveal>
