@@ -26,7 +26,7 @@ function Hero() {
             href="https://drive.google.com/file/d/1iIahUxYNs5XdktbeHmWO91CCNnW1c3p3/view?usp=sharing"
             className="self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm md:self-start md:text-xl/;"
           >
-            View my CV{" "}
+            View My Experiences{" "}
             <img src="/arrow_right_icon.svg" alt="Arrow Right Icon" />
           </a>
         </Reveal>
