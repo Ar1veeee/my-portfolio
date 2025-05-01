@@ -20,10 +20,6 @@
         "icon": "/html_icon.png"
     },
     {
-        "name": "React JS",
-        "icon": "/react_icon.png"
-    },
-    {
         "name": "Tailwind CSS",
         "icon": "/tailwind_icon.png"
     },
@@ -60,11 +56,19 @@
         "icon": "/firebase_icon.png"
     },
     {
-        "name": "Node.js",
-        "icon": "/nodejs_icon.png"
+        "name": "MongoDB",
+        "icon": "/mongoose_icon.png"
     },
     {
         "name": "Express.js",
         "icon": "/express_icon.png"
+    },
+    {
+        "name": "React JS",
+        "icon": "/react_icon.png"
+    },
+    {
+        "name": "Node.js",
+        "icon": "/nodejs_icon.png"
     }
 ]
