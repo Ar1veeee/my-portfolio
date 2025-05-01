@@ -24,7 +24,7 @@ const Skill = ({ icon, name }: Props) => {
   };
 
   useEffect(() => {
-    // window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
