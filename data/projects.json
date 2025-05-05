@@ -27,7 +27,8 @@
       "/css_icon.png",
       "/js_icon.png",
       "/tailwind_icon.png",
-      "/react_icon.png"
+      "/react_icon.png",
+      "/vite_icon.png"
     ]
   },
   {
@@ -67,12 +68,33 @@
       "label": "APIs Documentation",
       "url": "https://github.com/Ar1veeee/BackEnd_SkinOry_CC"
     },
-    "description": "An API service designed for skincare analysis and product recommendations. Skinory APIs leverage web scraping and data processing to provide accurate and relevant skincare information.",
+    "description": "An API service designed for skincare personalized and product recommendations based on skin type.",
     "languageIcons": [      
       "/js_icon.png",
       "/express_icon.png",
       "/gcp_icon.png",
       "/nodejs_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/chatapp_thumbnail.png",
+    "title": "Real-Time Chat App",
+    "link": {
+      "label": "Yapdoodle.dash",
+      "url": "https://fullstack-chat-app-tan-iota.vercel.app"
+    },
+    "description": "Yapdoodle is a real-time chat web application built using MERN stack architecture.",
+    "languageIcons": [      
+      "/typescript_icon.png",
+      "/js_icon.png",
+      "/tailwind_icon.png",
+      "/nodejs_icon.png",
+      "/react_icon.png",
+      "/mongoose_icon.png",
+      "/express_icon.png",
+      "/socketio_icon.png",
+      "/vite_icon.png",
+      "/zustand_icon.jpeg"
     ]
   },
   {
@@ -90,7 +112,8 @@
       "/tailwind_icon.png",
       "/nodejs_icon.png",
       "/react_icon.png",
-      "/nextjs_icon.png"
+      "/nextjs_icon.png",
+      "/express_icon.png"
     ]
   }
 ]
