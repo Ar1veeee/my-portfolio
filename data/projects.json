@@ -23,8 +23,6 @@
     },
     "description": "Create an interactive Tic-Tac-Toe game that can be played with friends. Developed with React for a responsive gaming experience, and using HTML, CSS, JavaScript, and Tailwind CSS for an attractive look.",
     "languageIcons": [
-      "/html_icon.png",
-      "/css_icon.png",
       "/js_icon.png",
       "/tailwind_icon.png",
       "/react_icon.png",
@@ -73,7 +71,8 @@
       "/js_icon.png",
       "/express_icon.png",
       "/gcp_icon.png",
-      "/nodejs_icon.png"
+      "/nodejs_icon.png",
+      "/mysql_icon.png"
     ]
   },
   {
@@ -106,14 +105,118 @@
     },
     "description": "A web application built with React and Next.js that utilizes the Jikan API to fetch and manage anime lists, allowing users to track their watch progress and explore anime details.",
     "languageIcons": [      
-      "/html_icon.png",
-      "/css_icon.png",
       "/js_icon.png",
       "/tailwind_icon.png",
       "/nodejs_icon.png",
       "/react_icon.png",
       "/nextjs_icon.png",
       "/express_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/kumer_thumbnail.png",
+    "title": "School Grading System",
+    "link": {
+      "label": "Documentation",
+      "url": "https://github.com/Ar1veeee/my-anime-list"
+    },
+    "description": "A web application to support elementary school teachers in managing assessment systems in accordance with the Merdeka Curriculum.",
+    "languageIcons": [      
+      "/php_icon.png",
+      "/laravel_icon.png",
+      "/js_icon.png",
+      "/bootstrap_icon.png",
+      "/yajra_icon.png",
+      "/sweet-alert_icon.png",
+      "/chartjs_icon.png",
+      "/jquery_icon.png",
+      "/mysql_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/sicuan_thumbnail.png",
+    "title": "SiCuan",
+    "link": {
+      "label": "Documentation",
+      "url": "https://github.com/Ar1veeee/SiCuan"
+    },
+    "description": "An REST API designed for manage personalized and product recommendations based on skin type.",
+    "languageIcons": [      
+      "/js_icon.png",
+      "/ts_icon.png",
+      "/nodejs_icon.png",
+      "/bunjs_icon.png",
+      "/express_icon.png",
+      "/docker_icon.png",
+      "/git_icon.png",
+      "/prisma_icon.png",
+      "/mysql_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/puspa_thumbnail.png",
+    "title": "Puspa",
+    "link": {
+      "label": "Documentation",
+      "url": "https://github.com/Ar1veeee/puspa-rest-api"
+    },
+    "description": "An REST API designed for manage system information management of Puspa company.",
+    "languageIcons": [      
+      "/php_icon.png",
+      "/laravel_icon.png",
+      "/git_icon.png",
+      "/mysql_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/vegecart_thumbnail.png",
+    "title": "VegeCart",
+    "link": {
+      "label": "vegecart.dash",
+      "url": "https://vegecart-stackrive.vercel.app/"
+    },
+    "description": "An web application designed for manage inventory and sales of VegeCart company.",
+    "languageIcons": [      
+      "/js_icon.png",
+      "/go_icon.png",
+      "/react_icon.png",
+      "/git_icon.png",
+      "/gorm_icon.png",
+      "/mysql_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/tahuisuharni_thumbnail.png",
+    "title": "Web Profile",
+    "link": {
+      "label": "tahuisuharni.dash",
+      "url": "https://tahuisuharni.my.id"
+    },
+    "description": "An website designed for sell tahu isuharni product.",
+    "languageIcons": [      
+      "/js_icon.png",
+      "/go_icon.png",
+      "/react_icon.png",
+      "/git_icon.png",
+      "/gorm_icon.png",
+      "/mysql_icon.png"
+    ]
+  },
+  {
+    "thumbnail": "/barber_thumbnail.png",
+    "title": "Barber Shop",
+    "link": {
+      "label": "Documentation",
+      "url": "https://github.com/Ar1veeee/barbershop-webapp/"
+    },
+    "description": "An website designed for sell barber shop services.",
+    "languageIcons": [      
+      "/js_icon.png",
+      "/go_icon.png",
+      "/react_icon.png",
+      "/git_icon.png",
+      "/gorm_icon.png",
+      "/mysql_icon.png"
     ]
   }
 ]

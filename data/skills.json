@@ -8,56 +8,16 @@
         "icon": "/ts_icon.png"
     },
     {
-        "name": "Figma",
-        "icon": "/figma_icon.png"
+        "name": "Node.js",
+        "icon": "/nodejs_icon.png"
     },
     {
-        "name": "CSS",
-        "icon": "/css_icon.png"
+        "name": "Bun.js",
+        "icon": "/bunjs_icon.png"
     },
     {
-        "name": "HTML",
-        "icon": "/html_icon.png"
-    },
-    {
-        "name": "Tailwind CSS",
-        "icon": "/tailwind_icon.png"
-    },
-    {
-        "name": "Laravel",
-        "icon": "/laravel_icon.png"
-    },
-    {
-        "name": "Code Igniter",
-        "icon": "/ci_icon.png"
-    },
-    {
-        "name": "PHP",
-        "icon": "/php_icon.png"
-    },
-    {
-        "name": "Next.js",
-        "icon": "/nextjs_icon.png"
-    },
-    {
-        "name": "Bootstrap 5",
-        "icon": "/bootstrap_icon.png"
-    },
-    {
-        "name": "Google Cloud",
-        "icon": "/gcp_icon.png"
-    },
-    {
-        "name": "Redis",
-        "icon": "/redis_icon.png"
-    },
-    {
-        "name": "Firebase",
-        "icon": "/firebase_icon.png"
-    },
-    {
-        "name": "MongoDB",
-        "icon": "/mongoose_icon.png"
+        "name": "NestJs",
+        "icon": "/nestjs_icon.png"
     },
     {
         "name": "Express.js",
@@ -68,7 +28,107 @@
         "icon": "/react_icon.png"
     },
     {
-        "name": "Node.js",
-        "icon": "/nodejs_icon.png"
+        "name": "Next.js",
+        "icon": "/nextjs_icon.png"
+    },
+    {
+        "name": "Sanity",
+        "icon": "/sanity_icon.png"
+    },
+    {
+        "name": "Vue.js",
+        "icon": "/vuejs_icon.png"
+    },
+    {
+        "name": "PHP",
+        "icon": "/php_icon.png"
+    },
+    {
+        "name": "Laravel",
+        "icon": "/laravel_icon.png"
+    },
+    {
+        "name": "Code Igniter 4",
+        "icon": "/ci_icon.png"
+    },
+    {
+        "name": "Alpine.js",
+        "icon": "/alpinejs_icon.png"
+    },
+    {
+        "name": "Livewirre",
+        "icon": "/livewire_icon.png"
+    },
+    {
+        "name": "Go (Golang)",
+        "icon": "/go_icon.png"
+    },
+    {
+        "name": "Gin-Gonic",
+        "icon": "/gin-gonic_icon.png"
+    },
+    {
+        "name": "Bootstrap 5",
+        "icon": "/bootstrap_icon.png"
+    },
+    {
+        "name": "Tailwind CSS",
+        "icon": "/tailwind_icon.png"
+    },
+    {
+        "name": "jQuery",
+        "icon": "/jquery_icon.png"
+    },
+    {
+        "name": "Docker",
+        "icon": "/docker_icon.png"
+    },
+    {
+        "name": "RabbitMQ",
+        "icon": "/rabbitMQ_icon.png"
+    },
+    {
+        "name": "Git",
+        "icon": "/git_icon.png"
+    },
+    {
+        "name": "Google Cloud",
+        "icon": "/gcp_icon.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "/aws_icon.png"
+    },
+    {
+        "name": "Redis",
+        "icon": "/redis_icon.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "/firebase_icon.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "/mysql_icon.png"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "/postgresSQL_icon.png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "/mongoose_icon.png"
+    },
+    {
+        "name": "Elastic Search",
+        "icon": "/elasticSearch_icon.png"
+    },
+    {
+        "name": "GORM",
+        "icon": "/gorm_icon.png"
+    },
+    {
+        "name": "Prisma ORM",
+        "icon": "/prisma_icon.png"
     }
 ]
