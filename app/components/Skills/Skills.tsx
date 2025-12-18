@@ -4,7 +4,7 @@ import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import Image from "next/image";
 import skills from "@/data/skills.json";
 
-const categories = ["all", "frontend", "backend", "database", "tools"];
+const categories = ["all", "frontend", "backend", "database", "cloud", "tools"];
 
 const Skill = ({ icon, name, index }: { icon: string; name: string; index: number }) => {
   return (
@@ -71,7 +71,7 @@ function Skills() {
 
           {/* Category Filter Tabs */}
           <LayoutGroup>
-            <div className="flex flex-wrap justify-center bg-zinc-100 dark:bg-zinc-900/50 p-1.5 rounded-3xl md:rounded-full mt-8 border border-zinc-200 dark:border-zinc-800 gap-1">
+            <div className="grid grid-cols-3 md:grid-cols-6 bg-zinc-100 dark:bg-zinc-900/50 p-1.5 rounded-3xl md:rounded-full mt-8 border border-zinc-200 dark:border-zinc-800 gap-1">
               {categories.map((tab) => (
                 <button
                   key={tab}
