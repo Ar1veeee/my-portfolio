@@ -2,6 +2,7 @@
   {
     "thumbnail": "/weather_thumbnail.png",
     "title": "Weather Dashboard",
+    "category": "frontend",
     "link": {
       "label": "Weather.dash",
       "url": "https://aliefarfn-weather-dash.vercel.app/"
@@ -17,6 +18,7 @@
   {
     "thumbnail": "/tictactoe_thumbnail.png",
     "title": "Tictactoe Game",
+    "category": "frontend",
     "link": {
       "label": "Tictactoe.dash",
       "url": "https://aliefarfn-tictactoe-dash.vercel.app/"
@@ -32,6 +34,7 @@
   {
     "thumbnail": "/portal_thumbnail.png",
     "title": "Landing Page",
+    "category": "frontend",
     "link": {
       "label": "Portal.dash",
       "url": "https://homepage-three-plum.vercel.app/"
@@ -47,6 +50,7 @@
   {
     "thumbnail": "/portfolio_thumbnail.png",
     "title": "My First Portfolio",
+    "category": "frontend",
     "link": {
       "label": "Portfolio.dash",
       "url": "https://aliefarfn-old-profile.vercel.app/"
@@ -62,6 +66,7 @@
   {
     "thumbnail": "/skinory_thumbnail.png",
     "title": "Skinory APIs",
+    "category": "backend",
     "link": {
       "label": "APIs Documentation",
       "url": "https://github.com/Ar1veeee/BackEnd_SkinOry_CC"
@@ -78,6 +83,7 @@
   {
     "thumbnail": "/chatapp_thumbnail.png",
     "title": "Real-Time Chat App",
+    "category": "fullstack",
     "link": {
       "label": "Yapdoodle.dash",
       "url": "https://fullstack-chat-app-tan-iota.vercel.app"
@@ -99,6 +105,7 @@
   {
     "thumbnail": "/animelist_thumbnail.png",
     "title": "Anime List",
+    "category": "fullstack",
     "link": {
       "label": "Under Develop",
       "url": "https://github.com/Ar1veeee/my-anime-list"
@@ -116,6 +123,7 @@
   {
     "thumbnail": "/kumer_thumbnail.png",
     "title": "School Grading System",
+    "category": "fullstack",
     "link": {
       "label": "Documentation",
       "url": "https://github.com/Ar1veeee/my-anime-list"
@@ -136,6 +144,7 @@
   {
     "thumbnail": "/sicuan_thumbnail.png",
     "title": "SiCuan",
+    "category": "backend",
     "link": {
       "label": "Documentation",
       "url": "https://github.com/Ar1veeee/SiCuan"
@@ -156,6 +165,7 @@
   {
     "thumbnail": "/puspa_thumbnail.png",
     "title": "Puspa",
+    "category": "backend",
     "link": {
       "label": "Documentation",
       "url": "https://github.com/Ar1veeee/puspa-rest-api"
@@ -171,6 +181,7 @@
   {
     "thumbnail": "/vegecart_thumbnail.png",
     "title": "VegeCart",
+    "category": "fullstack",
     "link": {
       "label": "vegecart.dash",
       "url": "https://vegecart-stackrive.vercel.app/"
@@ -188,6 +199,7 @@
   {
     "thumbnail": "/tahuisuharni_thumbnail.png",
     "title": "Web Profile",
+    "category": "frontend",
     "link": {
       "label": "tahuisuharni.dash",
       "url": "https://tahuisuharni.my.id"
@@ -205,6 +217,7 @@
   {
     "thumbnail": "/barber_thumbnail.png",
     "title": "Barber Shop",
+    "category": "fullstack",
     "link": {
       "label": "Documentation",
       "url": "https://github.com/Ar1veeee/barbershop-webapp/"
