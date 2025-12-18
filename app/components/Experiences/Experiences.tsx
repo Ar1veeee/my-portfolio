@@ -23,7 +23,7 @@ const Experiences = () => {
 
   return (
     <SectionContainer id="experiences">
-      <div className="relative z-10 container mx-auto px-6 md:px-20">
+      <div className="relative z-10 container mx-auto px-10 md:px-20">
         <div className="text-center mb-16">
           <SectionHeader plainText="💼 My prior" highlightText="Experience" />
         </div>
