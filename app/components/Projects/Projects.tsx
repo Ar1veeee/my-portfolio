@@ -35,7 +35,7 @@ const Projects = () => {
 
           {/* Tab Filtering */}
           <LayoutGroup>
-            <div className="flex flex-wrap justify-center bg-white/50 dark:bg-zinc-900/50 p-1.5 rounded-full mt-8 border border-zinc-200 dark:border-zinc-800 gap-1 backdrop-blur-md">
+            <div className="grid grid-cols-2 md:grid-cols-4 justify-center bg-white/50 dark:bg-zinc-900/50 p-1.5 rounded-3xl md:rounded-full mt-8 px-2 border border-zinc-200 dark:border-zinc-800 gap-1 backdrop-blur-md">
               {categories.map((tab) => (
                 <button
                   key={tab}
