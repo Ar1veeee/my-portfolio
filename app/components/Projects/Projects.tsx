@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <SectionContainer id="projects">
       <div className="relative z-10 container mx-auto px-6 lg:px-20">
-        <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-6">
+        <div className="flex justify-center items-start md:items-end mb-16 gap-6">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -18,15 +18,6 @@ const Projects = () => {
           >
             <SectionHeader plainText="🚀 Featured" highlightText="Projects" />
           </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="text-zinc-500 dark:text-zinc-400 max-w-xs text-sm border-l-2 border-blue-500 pl-4"
-          >
-            Exploring the intersection of design and code through
-            high-performance web applications.
-          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">

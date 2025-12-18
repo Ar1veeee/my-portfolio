@@ -73,8 +73,10 @@ const Contact = () => {
                   width={24}
                   height={24}
                   src="/mail_icon.svg"
-                  alt=""
-                  className={`${isCopied ? "hidden" : "block"} dark:invert`}
+                  alt="Mail Icon"
+                  className={`${
+                    isCopied ? "hidden" : "block"
+                  } dark:invert w-auto h-auto`}
                 />
               </motion.button>
 
