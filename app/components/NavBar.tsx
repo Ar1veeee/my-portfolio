@@ -37,7 +37,7 @@ const NavBar = () => {
 
         if (bestEntry?.isIntersecting) setActiveSection(bestEntry.target.id);
       },
-      { rootMargin: "-20% 0px -20% 0px", threshold: [0.1, 0.5, 0.8] }
+      { rootMargin: "-30% 0px -30% 0px", threshold: [0.1, 0.5, 0.8] }
     );
 
     navItems.forEach((item) => {
@@ -64,29 +64,49 @@ const NavBar = () => {
         window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
         setTimeout(() => { isScrollingManual.current = false; }, 1000);
       }
-    }, 200);
+    }, 250);
   };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999] flex flex-col items-center p-4 md:p-6 pointer-events-none">
       <LayoutGroup id="navbar-group">
-        {/* Container Utama: Menjaga lebar tetap konsisten */}
-        <div className="w-full max-w-md md:max-w-fit pointer-events-auto">
+        <div className="w-1/2 md:w-full max-w-[350px] md:max-w-fit pointer-events-auto">
           <motion.nav
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className={`flex items-center justify-between md:justify-center bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border border-white/20 dark:border-zinc-800/50 px-4 py-2 rounded-[2rem] shadow-2xl transition-all duration-500 ${
+            className={`flex bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border border-white/20 dark:border-zinc-800/50 px-4 py-2 rounded-[2.5rem] shadow-2xl transition-all duration-500 ${
               isScrolled ? "shadow-purple-500/10" : ""
             }`}
           >
-            {/* Logo Mobile: Muncul hanya di mobile */}
-            <div className="flex md:hidden px-2">
+            {/* Mobile View Content */}
+            <div className="flex md:hidden w-full items-center justify-between px-2">
               <span className="font-black text-zinc-900 dark:text-white tracking-tighter italic">
-                ALIEF.
+                Aliefarfn
               </span>
+              
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2.5 bg-zinc-200/50 dark:bg-zinc-800 rounded-full flex items-center justify-center"
+                aria-label="Toggle menu"
+              >
+                <div className="w-5 h-4 flex flex-col justify-between items-center relative">
+                  <motion.span
+                    animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+                    className="w-full h-0.5 bg-zinc-900 dark:bg-white rounded-full origin-center"
+                  />
+                  <motion.span
+                    animate={isOpen ? { opacity: 0, x: -10 } : { opacity: 1, x: 0 }}
+                    className="w-full h-0.5 bg-zinc-900 dark:bg-white rounded-full"
+                  />
+                  <motion.span
+                    animate={isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+                    className="w-full h-0.5 bg-zinc-900 dark:bg-white rounded-full origin-center"
+                  />
+                </div>
+              </button>
             </div>
 
-            {/* Desktop Menu */}
+            {/* Desktop View Menu */}
             <ul className="hidden md:flex items-center gap-1">
               {navItems.map((item) => (
                 <li key={item.id} className="relative">
@@ -110,49 +130,25 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-
-            {/* Toggle Mobile: Hanya muncul di mobile */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"
-                aria-label="Toggle menu"
-              >
-                <div className="w-5 h-4 flex flex-col justify-between items-center relative">
-                  <motion.span
-                    animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
-                    className="w-full h-0.5 bg-zinc-900 dark:bg-white rounded-full"
-                  />
-                  <motion.span
-                    animate={isOpen ? { opacity: 0, x: -10 } : { opacity: 1, x: 0 }}
-                    className="w-full h-0.5 bg-zinc-900 dark:bg-white rounded-full"
-                  />
-                  <motion.span
-                    animate={isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
-                    className="w-full h-0.5 bg-zinc-900 dark:bg-white rounded-full"
-                  />
-                </div>
-              </button>
-            </div>
           </motion.nav>
 
-          {/* Mobile Dropdown: Rapi di bawah navbar */}
+          {/* Mobile Dropdown Menu */}
           <AnimatePresence>
             {isOpen && (
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: -10 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: -10 }}
-                className="absolute top-full left-0 right-0 mt-3 md:hidden px-2"
+                initial={{ opacity: 0, y: -20, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -20, scale: 0.95 }}
+                className="absolute top-full left-0 right-0 mt-3 md:hidden"
               >
-                <ul className="flex flex-col gap-1 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-2xl border border-white/20 dark:border-zinc-800/50 rounded-[2rem] p-2 shadow-2xl">
+                <ul className="flex flex-col gap-1 bg-white/90 dark:bg-zinc-900/95 backdrop-blur-2xl border border-white/20 dark:border-zinc-800/50 rounded-[2rem] p-2 shadow-2xl">
                   {navItems.map((item) => (
                     <li key={item.id}>
                       <button
                         onClick={() => scrollToSection(item.id)}
-                        className={`w-full text-center py-4 rounded-[1.5rem] text-sm font-bold transition-all ${
+                        className={`w-full text-center py-4 rounded-[1.8rem] text-sm font-bold transition-all ${
                           activeSection === item.id
-                            ? "bg-zinc-900 text-white dark:bg-white dark:text-black"
+                            ? "bg-zinc-900 text-white dark:bg-white dark:text-black shadow-md"
                             : "text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800"
                         }`}
                       >

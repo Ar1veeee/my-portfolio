@@ -9,7 +9,6 @@ import Testimonial from "./Testimonial";
 const Testimonials = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  // Duplikasi data agar tidak ada celah saat scrolling
   const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonials];
 
   return (
@@ -37,7 +36,7 @@ const Testimonials = () => {
               x: isHovered ? "-33.33%" : "-66.66%",
             }}
             transition={{
-              duration: isHovered ? 60 : 30, // Melambat saat di-hover
+              duration: isHovered ? 60 : 50,
               repeat: Infinity,
               ease: "linear",
             }}
@@ -53,12 +52,6 @@ const Testimonials = () => {
               />
             ))}
           </motion.div>
-        </div>
-
-        {/* Decorative Background Labels */}
-        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex gap-4 opacity-10 dark:opacity-5 select-none pointer-events-none">
-            <span className="text-8xl font-black whitespace-nowrap uppercase">Trusted by Partners • Feedback • </span>
-            <span className="text-8xl font-black whitespace-nowrap uppercase">Trusted by Partners • Feedback • </span>
         </div>
       </div>
     </SectionContainer>

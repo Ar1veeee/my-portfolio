@@ -6,7 +6,7 @@ import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   return (
-    <div className="relative" id="home">
+    <div className="relative overflow-x-hidden overflow-y-hidden" id="home">
       <TopBackground />
       <Sections />
       <ThemeToggle />
