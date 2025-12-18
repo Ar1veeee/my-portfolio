@@ -78,7 +78,7 @@ function Skills() {
                   onClick={() => setActiveTab(tab)}
                   className={`relative px-4 py-2 md:px-6 md:py-2.5 text-xs md:text-sm font-bold capitalize transition-all duration-300 rounded-full ${
                     activeTab === tab
-                      ? "text-white dark:text-white"
+                      ? "text-purple-600 dark:text-white"
                       : "text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
                   }`}
                 >
