@@ -2,63 +2,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import Image from "next/image";
-
-// Import your actual skills data
-// import skills from "@/data/skills.json";
-
-// For demo purposes, using inline data
-const skillsData = [
-  { name: "Javascript", icon: "/js_icon.png", category: "frontend" },
-  { name: "Typescript", icon: "/ts_icon.png", category: "frontend" },
-  { name: "Node.js", icon: "/nodejs_icon.png", category: "backend" },
-  { name: "Bun.js", icon: "/bunjs_icon.png", category: "backend" },
-  { name: "NestJs", icon: "/nestjs_icon.png", category: "backend" },
-  { name: "Express.js", icon: "/express_icon.png", category: "backend" },
-  { name: "React JS", icon: "/react_icon.png", category: "frontend" },
-  { name: "Next.js", icon: "/nextjs_icon.png", category: "frontend" },
-  { name: "Sanity", icon: "/sanity_icon.png", category: "tools" },
-  { name: "Vue.js", icon: "/vuejs_icon.png", category: "frontend" },
-  { name: "PHP", icon: "/php_icon.png", category: "backend" },
-  { name: "Laravel", icon: "/laravel_icon.png", category: "backend" },
-  { name: "Code Igniter", icon: "/ci_icon.png", category: "backend" },
-  { name: "Alpine.js", icon: "/alpinejs_icon.png", category: "frontend" },
-  { name: "Livewirre", icon: "/livewire_icon.png", category: "frontend" },
-  { name: "Go (Golang)", icon: "/go_icon.png", category: "backend" },
-  { name: "Gin-Gonic", icon: "/gin-gonic_icon.png", category: "backend" },
-  { name: "Bootstrap 5", icon: "/bootstrap_icon.png", category: "frontend" },
-  { name: "Tailwind CSS", icon: "/tailwind_icon.png", category: "frontend" },
-  { name: "jQuery", icon: "/jquery_icon.png", category: "frontend" },
-  { name: "Docker", icon: "/docker_icon.png", category: "tools" },
-  { name: "RabbitMQ", icon: "/rabbitMQ_icon.png", category: "backend" },
-  { name: "Git", icon: "/git_icon.png", category: "tools" },
-  { name: "Google Cloud", icon: "/gcp_icon.png", category: "tools" },
-  { name: "AWS", icon: "/aws_icon.png", category: "tools" },
-  { name: "Redis", icon: "/redis_icon.png", category: "database" },
-  { name: "Firebase", icon: "/firebase_icon.png", category: "tools" },
-  { name: "MySQL", icon: "/mysql_icon.png", category: "database" },
-  { name: "PostgreSQL", icon: "/postgresSQL_icon.png", category: "database" },
-  { name: "MongoDB", icon: "/mongoose_icon.png", category: "database" },
-  {
-    name: "Elastic Search",
-    icon: "/elasticSearch_icon.png",
-    category: "database",
-  },
-  { name: "GORM", icon: "/gorm_icon.png", category: "database" },
-  { name: "Prisma ORM", icon: "/prisma_icon.png", category: "database" },
-];
+import skills from "@/data/skills.json";
 
 const categories = ["all", "frontend", "backend", "database", "tools"];
 
-// Skill Card Component
-const Skill = ({
-  icon,
-  name,
-  index,
-}: {
-  icon: string;
-  name: string;
-  index: number;
-}) => {
+const Skill = ({ icon, name, index }: { icon: string; name: string; index: number }) => {
   return (
     <motion.div
       layout
@@ -99,8 +47,8 @@ function Skills() {
 
   const filteredSkills =
     activeTab === "all"
-      ? skillsData
-      : skillsData.filter((s) => s.category?.toLowerCase() === activeTab);
+      ? skills
+      : skills.filter((s) => s.category?.toLowerCase() === activeTab);
 
   return (
     // FIXED: Added position relative to container
@@ -138,10 +86,10 @@ function Skills() {
                     <motion.div
                       layoutId="activeTabBackground"
                       className="absolute inset-0 bg-purple-600 rounded-full -z-10"
-                      transition={{
-                        type: "spring",
-                        stiffness: 380,
-                        damping: 30,
+                      transition={{ 
+                        type: "spring", 
+                        stiffness: 380, 
+                        damping: 30 
                       }}
                     />
                   )}
@@ -191,14 +139,14 @@ function Skills() {
           {[1, 2, 3].map((i) => (
             <motion.h1
               key={i}
-              animate={{
-                x: i % 2 === 0 ? [-200, 200] : [200, -200],
+              animate={{ 
+                x: i % 2 === 0 ? [-200, 200] : [200, -200] 
               }}
-              transition={{
-                duration: 30,
-                repeat: Infinity,
+              transition={{ 
+                duration: 30, 
+                repeat: Infinity, 
                 ease: "linear",
-                delay: i * 0.5,
+                delay: i * 0.5
               }}
               className="text-[8rem] md:text-[10rem] lg:text-[12rem] font-black leading-none whitespace-nowrap"
             >

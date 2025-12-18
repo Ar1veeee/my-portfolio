@@ -23,7 +23,7 @@ export default function Home() {
         alt="Bottom gradient background"
         height={936}
         width={1557}
-        className="absolute -bottom-[175px] left-1/2 -translate-x-1/2 min-w-[1557px] min-h-[936px] -z-50 hidden md:block"
+        className="absolute -bottom-[175px] left-1/2 -translate-x-1/2 min-w-[1557px] min-h-[936px] object-cover -z-50 hidden md:block w-auto h-auto"
       />
     </div>
   );
