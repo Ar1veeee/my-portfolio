@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import Reveal from "../Reveal";
 
 function Hero() {
@@ -27,7 +26,7 @@ function Hero() {
             className="self-center bg-primary text-white p-2.5 rounded flex gap-2.5 items-center text-sm md:self-start md:text-xl/;"
           >
             View My Experiences{" "}
-            <img src="/arrow_right_icon.svg" alt="Arrow Right Icon" />
+            <Image width={24} height={24} src="/arrow_right_icon.svg" alt="Arrow Right Icon" />
           </a>
         </Reveal>
       </div>
@@ -38,14 +37,14 @@ function Hero() {
             alt="Light purple rectangle"
             width={372}
             height={430}
-            className="hidden md:block w-[372px] h-[430px] absolute right-0 top-0 -z-10 group-hover:scale-[102%] group-hover:-rotate-2 ease-in-out duration-300"
+            className="hidden md:block absolute right-0 top-0 -z-10 group-hover:scale-[102%] group-hover:-rotate-2 ease-in-out duration-300"
           />  
           <Image
             src="/profile_dark_purple.png"
             alt="Dark purple rectangle"
             width={372}
             height={430}
-            className="hidden md:block w-[372px] h-[430px] absolute right-0 top-0 -z-10 group-hover:scale-[102%] group-hover:rotate-2 ease-in-out duration-300"
+            className="hidden md:block absolute right-0 top-0 -z-10 group-hover:scale-[102%] group-hover:rotate-2 ease-in-out duration-300"
           />
           <Image
             src="/profile_picture.png"

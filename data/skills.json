@@ -1,134 +1,167 @@
 [
     {
         "name": "Javascript",
-        "icon": "/js_icon.png"
+        "icon": "/js_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Typescript",
-        "icon": "/ts_icon.png"
+        "icon": "/ts_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Node.js",
-        "icon": "/nodejs_icon.png"
+        "icon": "/nodejs_icon.png",
+        "category": "backend"
     },
     {
         "name": "Bun.js",
-        "icon": "/bunjs_icon.png"
+        "icon": "/bunjs_icon.png",
+        "category": "backend"
     },
     {
         "name": "NestJs",
-        "icon": "/nestjs_icon.png"
+        "icon": "/nestjs_icon.png",
+        "category": "backend"
     },
     {
         "name": "Express.js",
-        "icon": "/express_icon.png"
+        "icon": "/express_icon.png",
+        "category": "backend"
     },
     {
         "name": "React JS",
-        "icon": "/react_icon.png"
+        "icon": "/react_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Next.js",
-        "icon": "/nextjs_icon.png"
+        "icon": "/nextjs_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Sanity",
-        "icon": "/sanity_icon.png"
+        "icon": "/sanity_icon.png",
+        "category": "tools"
     },
     {
         "name": "Vue.js",
-        "icon": "/vuejs_icon.png"
+        "icon": "/vuejs_icon.png",
+        "category": "frontend"
     },
     {
         "name": "PHP",
-        "icon": "/php_icon.png"
+        "icon": "/php_icon.png",
+        "category": "backend"
     },
     {
         "name": "Laravel",
-        "icon": "/laravel_icon.png"
+        "icon": "/laravel_icon.png",
+        "category": "backend"
     },
     {
-        "name": "Code Igniter 4",
-        "icon": "/ci_icon.png"
+        "name": "Code Igniter",
+        "icon": "/ci_icon.png",
+        "category": "backend"
     },
     {
         "name": "Alpine.js",
-        "icon": "/alpinejs_icon.png"
+        "icon": "/alpinejs_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Livewirre",
-        "icon": "/livewire_icon.png"
+        "icon": "/livewire_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Go (Golang)",
-        "icon": "/go_icon.png"
+        "icon": "/go_icon.png",
+        "category": "backend"
     },
     {
         "name": "Gin-Gonic",
-        "icon": "/gin-gonic_icon.png"
+        "icon": "/gin-gonic_icon.png",
+        "category": "backend"
     },
     {
         "name": "Bootstrap 5",
-        "icon": "/bootstrap_icon.png"
+        "icon": "/bootstrap_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Tailwind CSS",
-        "icon": "/tailwind_icon.png"
+        "icon": "/tailwind_icon.png",
+        "category": "frontend"
     },
     {
         "name": "jQuery",
-        "icon": "/jquery_icon.png"
+        "icon": "/jquery_icon.png",
+        "category": "frontend"
     },
     {
         "name": "Docker",
-        "icon": "/docker_icon.png"
+        "icon": "/docker_icon.png",
+        "category": "tools"
     },
     {
         "name": "RabbitMQ",
-        "icon": "/rabbitMQ_icon.png"
+        "icon": "/rabbitMQ_icon.png",
+        "category": "backend"
     },
     {
         "name": "Git",
-        "icon": "/git_icon.png"
+        "icon": "/git_icon.png",
+        "category": "tools"
     },
     {
         "name": "Google Cloud",
-        "icon": "/gcp_icon.png"
+        "icon": "/gcp_icon.png",
+        "category": "tools"
     },
     {
         "name": "AWS",
-        "icon": "/aws_icon.png"
+        "icon": "/aws_icon.png",
+        "category": "tools"
     },
     {
         "name": "Redis",
-        "icon": "/redis_icon.png"
+        "icon": "/redis_icon.png",
+        "category": "database"
     },
     {
         "name": "Firebase",
-        "icon": "/firebase_icon.png"
+        "icon": "/firebase_icon.png",
+        "category": "tools"
     },
     {
         "name": "MySQL",
-        "icon": "/mysql_icon.png"
+        "icon": "/mysql_icon.png",
+        "category": "database"
     },
     {
         "name": "PostgreSQL",
-        "icon": "/postgresSQL_icon.png"
+        "icon": "/postgresSQL_icon.png",
+        "category": "database"
     },
     {
         "name": "MongoDB",
-        "icon": "/mongoose_icon.png"
+        "icon": "/mongoose_icon.png",
+        "category": "database"
     },
     {
         "name": "Elastic Search",
-        "icon": "/elasticSearch_icon.png"
+        "icon": "/elasticSearch_icon.png",
+        "category": "database"
     },
     {
         "name": "GORM",
-        "icon": "/gorm_icon.png"
+        "icon": "/gorm_icon.png",
+        "category": "database"
     },
     {
         "name": "Prisma ORM",
-        "icon": "/prisma_icon.png"
+        "icon": "/prisma_icon.png",
+        "category": "database"
     }
 ]

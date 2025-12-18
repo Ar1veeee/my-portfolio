@@ -59,19 +59,20 @@ const TopBackground = () => {
           </div>
         </div>
       </div>
-      <img
+      <Image
         src="/top_highlight.svg"
         alt="Top dark mode background highlight"
         width={809}
         height={877}
-        className="absolute top-[-515px] hidden dark:md:block left-1/2 -translate-x-1/2"
+        className="absolute top-[-515px] hidden dark:md:block left-1/2 -translate-x-1/2 w-auto h-auto"
       />
-      <img
+
+      <Image
         src="/top_highlight.svg"
         alt="Top dark mode background highlight for mobile"
         width={429}
         height={465}
-        className="absolute top-[-229px] hidden dark:block dark:md:hidden left-1/2 -translate-x-1/2"
+        className="absolute top-[-229px] hidden dark:block dark:md:hidden left-1/2 -translate-x-1/2 w-auto h-auto"
       />
       <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-top-bg-light bg-[auto_auto] hidden dark:hidden md:block"></div>
       <div className="absolute top-0 w-full h-[795px] bg-repeat-x bg-top-bg-mobile-light bg-[auto_auto] dark:hidden md:hidden"></div>

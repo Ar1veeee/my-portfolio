@@ -1,38 +1,213 @@
-import React from "react";
-import skills from "@/data/skills.json";
-import SectionContainer from "../Section/SectionContainer";
-import SectionHeader from "../Section/SectionHeader";
-import Skill from "./Skill";
+"use client";
+import { useState } from "react";
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import Image from "next/image";
 
-function Skills() {
+// Import your actual skills data
+// import skills from "@/data/skills.json";
+
+// For demo purposes, using inline data
+const skillsData = [
+  { name: "Javascript", icon: "/js_icon.png", category: "frontend" },
+  { name: "Typescript", icon: "/ts_icon.png", category: "frontend" },
+  { name: "Node.js", icon: "/nodejs_icon.png", category: "backend" },
+  { name: "Bun.js", icon: "/bunjs_icon.png", category: "backend" },
+  { name: "NestJs", icon: "/nestjs_icon.png", category: "backend" },
+  { name: "Express.js", icon: "/express_icon.png", category: "backend" },
+  { name: "React JS", icon: "/react_icon.png", category: "frontend" },
+  { name: "Next.js", icon: "/nextjs_icon.png", category: "frontend" },
+  { name: "Sanity", icon: "/sanity_icon.png", category: "tools" },
+  { name: "Vue.js", icon: "/vuejs_icon.png", category: "frontend" },
+  { name: "PHP", icon: "/php_icon.png", category: "backend" },
+  { name: "Laravel", icon: "/laravel_icon.png", category: "backend" },
+  { name: "Code Igniter", icon: "/ci_icon.png", category: "backend" },
+  { name: "Alpine.js", icon: "/alpinejs_icon.png", category: "frontend" },
+  { name: "Livewirre", icon: "/livewire_icon.png", category: "frontend" },
+  { name: "Go (Golang)", icon: "/go_icon.png", category: "backend" },
+  { name: "Gin-Gonic", icon: "/gin-gonic_icon.png", category: "backend" },
+  { name: "Bootstrap 5", icon: "/bootstrap_icon.png", category: "frontend" },
+  { name: "Tailwind CSS", icon: "/tailwind_icon.png", category: "frontend" },
+  { name: "jQuery", icon: "/jquery_icon.png", category: "frontend" },
+  { name: "Docker", icon: "/docker_icon.png", category: "tools" },
+  { name: "RabbitMQ", icon: "/rabbitMQ_icon.png", category: "backend" },
+  { name: "Git", icon: "/git_icon.png", category: "tools" },
+  { name: "Google Cloud", icon: "/gcp_icon.png", category: "tools" },
+  { name: "AWS", icon: "/aws_icon.png", category: "tools" },
+  { name: "Redis", icon: "/redis_icon.png", category: "database" },
+  { name: "Firebase", icon: "/firebase_icon.png", category: "tools" },
+  { name: "MySQL", icon: "/mysql_icon.png", category: "database" },
+  { name: "PostgreSQL", icon: "/postgresSQL_icon.png", category: "database" },
+  { name: "MongoDB", icon: "/mongoose_icon.png", category: "database" },
+  {
+    name: "Elastic Search",
+    icon: "/elasticSearch_icon.png",
+    category: "database",
+  },
+  { name: "GORM", icon: "/gorm_icon.png", category: "database" },
+  { name: "Prisma ORM", icon: "/prisma_icon.png", category: "database" },
+];
+
+const categories = ["all", "frontend", "backend", "database", "tools"];
+
+// Skill Card Component
+const Skill = ({
+  icon,
+  name,
+  index,
+}: {
+  icon: string;
+  name: string;
+  index: number;
+}) => {
   return (
-    <SectionContainer id="skills">
-      <div className="section-contents mx-[22px] md:mx-[116px]">
-        <SectionHeader plainText="💻 This is my" highlightText="Tech Stack" />
-        <div className="card w-full px-[33px] py-[27px] flex flex-wrap flex-col md:flex-row justify-center items-center gap-[19px] md:gap-[33px]">
-          {skills.map((skill, id) => (
-            <Skill key={id} name={skill.name} icon={skill.icon} />
+    <motion.div
+      layout
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{
+        opacity: { duration: 0.2 },
+        layout: { type: "spring", stiffness: 350, damping: 30 },
+      }}
+      whileHover={{ y: -8, rotateZ: index % 2 === 0 ? 2 : -2 }}
+      className="group relative flex flex-col items-center justify-center p-6 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 rounded-[2rem] hover:shadow-2xl hover:shadow-purple-500/20 transition-shadow duration-300"
+    >
+      {/* Hover border effect */}
+      <div className="absolute inset-0 rounded-[2rem] border-2 border-transparent group-hover:border-purple-500/30 transition-colors duration-500" />
+
+      {/* Icon container */}
+      <div className="relative mb-3 p-3 bg-zinc-100 dark:bg-zinc-800 rounded-2xl group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+        <Image
+          width={32}
+          height={32}
+          src={icon}
+          alt={name}
+          className="w-8 h-8 object-contain"
+        />
+      </div>
+
+      {/* Skill name */}
+      <span className="text-xs font-bold tracking-tighter text-zinc-500 dark:text-zinc-400 group-hover:text-purple-500 uppercase transition-colors">
+        {name}
+      </span>
+    </motion.div>
+  );
+};
+
+function Skills() {
+  const [activeTab, setActiveTab] = useState("all");
+
+  const filteredSkills =
+    activeTab === "all"
+      ? skillsData
+      : skillsData.filter((s) => s.category?.toLowerCase() === activeTab);
+
+  return (
+    // FIXED: Added position relative to container
+    <section id="skills" className="relative py-20 md:py-32 overflow-hidden">
+      <div className="relative z-10 container mx-auto px-6">
+        {/* Header */}
+        <div className="flex flex-col items-center text-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex flex-col items-center"
+          >
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-zinc-900 dark:text-white">
+              My Tech <span className="text-purple-600">Arsenal</span>
+            </h2>
+            <div className="h-1.5 w-24 bg-purple-600 rounded-full mt-4" />
+          </motion.div>
+
+          {/* Category Filter Tabs */}
+          <LayoutGroup>
+            <div className="flex flex-wrap justify-center bg-zinc-100 dark:bg-zinc-900/50 p-1.5 rounded-3xl md:rounded-full mt-8 border border-zinc-200 dark:border-zinc-800 gap-1">
+              {categories.map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`relative px-4 py-2 md:px-6 md:py-2.5 text-xs md:text-sm font-bold capitalize transition-all duration-300 rounded-full ${
+                    activeTab === tab
+                      ? "text-white dark:text-white"
+                      : "text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
+                  }`}
+                >
+                  {activeTab === tab && (
+                    <motion.div
+                      layoutId="activeTabBackground"
+                      className="absolute inset-0 bg-purple-600 rounded-full -z-10"
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 30,
+                      }}
+                    />
+                  )}
+                  {tab}
+                </button>
+              ))}
+            </div>
+          </LayoutGroup>
+        </div>
+
+        {/* Skills Grid with Fixed Layout */}
+        <LayoutGroup>
+          <motion.div
+            layout
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6"
+          >
+            <AnimatePresence mode="popLayout">
+              {filteredSkills.map((skill, index) => (
+                <Skill
+                  key={skill.name}
+                  index={index}
+                  name={skill.name}
+                  icon={skill.icon}
+                />
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </LayoutGroup>
+
+        {/* Empty state */}
+        {filteredSkills.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-20"
+          >
+            <p className="text-zinc-500 dark:text-zinc-400 text-lg">
+              No skills found in this category.
+            </p>
+          </motion.div>
+        )}
+      </div>
+
+      {/* Animated Background Text */}
+      <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none opacity-[0.03] dark:opacity-[0.05]">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 flex flex-col gap-10">
+          {[1, 2, 3].map((i) => (
+            <motion.h1
+              key={i}
+              animate={{
+                x: i % 2 === 0 ? [-200, 200] : [200, -200],
+              }}
+              transition={{
+                duration: 30,
+                repeat: Infinity,
+                ease: "linear",
+                delay: i * 0.5,
+              }}
+              className="text-[8rem] md:text-[10rem] lg:text-[12rem] font-black leading-none whitespace-nowrap"
+            >
+              JAVASCRIPT REACT NEXTJS TYPESCRIPT NODEJS TAILWIND PHP GO DOCKER
+            </motion.h1>
           ))}
         </div>
       </div>
-      <>
-        <Image
-          src="/tech_stack_grid_dark.svg"
-          alt="Background grid decoration"
-          width={569}
-          height={373}
-          className="hidden dark:md:block -z-10 absolute -left-[135px] -top-[39px]"
-        />
-        <Image
-          src="/tech_stack_grid.svg"
-          alt="Background grid decoration"
-          width={569}
-          height={373}
-          className="hidden dark:hidden md:block -z-10 absolute -left-[125px] -top-[39px]"
-        />
-      </>
-    </SectionContainer>
+    </section>
   );
 }
 
