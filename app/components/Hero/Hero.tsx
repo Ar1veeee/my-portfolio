@@ -47,8 +47,8 @@ function Hero() {
             className="hidden md:block absolute right-0 top-0 -z-10 group-hover:scale-[102%] group-hover:rotate-2 ease-in-out duration-300"
           />
           <Image
-            src="/profile_picture.png"
-            alt="Profile Picture"
+            src="/profile-image.png"
+            alt="Profile Image"
             width={357}
             height={417}
             className="hidden md:block min-w-[357px] w-[357px] h-[417px] -z-10 mr-[7.7px] my-[6.5px] group-hover:scale-[102%] ease-in-out duration-300"
