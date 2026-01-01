@@ -10,7 +10,7 @@ function Hero() {
             <span className="-ml-3">👋</span>
             Hello I&#8217;m Alief Arifin, I&#8217;m a {""}{" "}
             <span className="block text-[27px] highlight mt-2 md:text-[45px] md:inline md:mt-0">
-              Fullstack Developer
+              Software Engineer
             </span>
           </h1>
         </Reveal>
