@@ -79,7 +79,7 @@ function Skills() {
                   className={`relative px-4 py-2 md:px-6 md:py-2.5 text-xs md:text-sm font-bold capitalize transition-all duration-300 rounded-full ${
                     activeTab === tab
                       ? "text-purple-600 dark:text-white"
-                      : "text-zinc-300 hover:text-zinc-800 dark:hover:text-zinc-200"
+                      : "text-zinc-600 dark:text-zinc-300 hover:text-zinc-800 dark:hover:text-zinc-200"
                   }`}
                 >
                   {activeTab === tab && (

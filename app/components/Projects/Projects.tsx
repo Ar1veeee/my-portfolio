@@ -43,7 +43,7 @@ const Projects = () => {
                   className={`relative px-6 py-2 text-xs md:text-sm font-bold capitalize transition-all duration-300 rounded-full ${
                     activeTab === tab
                       ? "text-white"
-                      : "text-zinc-300 hover:text-zinc-800 dark:hover:text-zinc-200"
+                      : "text-zinc-600 dark:text-zinc-300 hover:text-zinc-800 dark:hover:text-zinc-200"
                   }`}
                 >
                   {activeTab === tab && (
