@@ -107,6 +107,7 @@ const Project = ({
           <motion.a
             href={link.url}
             target="_blank"
+            aria-label={`Open ${link.label}`}
             whileHover={{ scale: 1.1, rotate: 15 }}
             className="w-10 h-10 flex items-center justify-center bg-zinc-900 dark:bg-white text-white dark:text-black rounded-full shadow-lg"
           >
